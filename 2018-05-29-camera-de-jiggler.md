@@ -1,5 +1,5 @@
 # The Camera De-Jiggler
-## [<<](index.md)
+## [<<HOME](index.md)
 ![](images/gimbal.jpg)
 
 From February until mid-May of this year, I completed an internship at [Vision Dynamix](http://www.visiondynamix.com), a software start up founded in 2016 which develops mapping software for unmanned aerial vehicles based on SLAM systems for 3D reconstruction.
@@ -15,7 +15,7 @@ The servos behaved better than expected, but they had 3 flaws:
 * After just a few minutes of use they were too hot to touch.
 * Their electronics had a terrible habit of frying whenever I connected the power backwards. This is completely my fault but I just wanted to mention that I don't get along with servos.  
 
-The system consisted of:
+The system itself consisted of:
 * A prebuilt mechanical framework
 * A 3-axis linear accelerometer from Mikroelektronika
 * An Arduino Nano
@@ -25,9 +25,9 @@ Using some math, I was able to convert the linear readings into rotational readi
 
 However, through the magic that is PD control, I managed to code up something that responded about as quickly as the servos and my knowledge would allow me to. The error signal from the sensor is fed into the PD controller before adding or subtracting the amplified value to the width of the PWM signal (in microseconds).
 
-I didn't get a chance to perform any hard-tack systems analysis, as we decided to wait for the H-bridges which would "arrive *any day now*" (they didn't). At the end of the day though, I learned a little bit about applying systems control and a thing or two about "why isn't this working?".
-All in all, the de-jiggler was a success for what it was.
-
 The picture at the top of the blog is the "final" product, whereas below you can see the handmade PCB:
 
 ![](images/board_prototype.jpg)
+
+I didn't get a chance to perform any hard-tack systems analysis, as we decided to wait for the H-bridges which would "arrive *any day now*" (they didn't). At the end of the day though, I learned a little bit about applying systems control and a thing or two about "why isn't this working?".
+All in all, the de-jiggler was a success for what it was.
