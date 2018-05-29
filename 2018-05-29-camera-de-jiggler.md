@@ -21,7 +21,7 @@ The system consisted of:
 * An Arduino Nano
 * 2x9g Servo Motors doomed to an early grave
 
-Using some math, I was able to convert the linear readings into rotational readings based on the sensor's interaction with gravity. The calculations included floating point operations and the usage of {%math.h%}'s functions, so it suffices to say that these probably slowed the process down and are partially to blame for its lack of responsiveness.
+Using some math, I was able to convert the linear readings into rotational readings based on the sensor's interaction with gravity. The calculations included floating point operations and the usage of ***<math.h>***'s functions, so it suffices to say that these probably slowed the process down and are partially to blame for its lack of responsiveness.
 
 However, through the magic that is PD control, I managed to code up something that responded about as quickly as the servos and my knowledge would allow me to. The error signal from the sensor is fed into the PD controller before adding or subtracting the amplified value to the width of the PWM signal (in microseconds).
 
