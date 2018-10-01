@@ -16,7 +16,7 @@
 title: Marko Galevski's Incredibly Professional Engineering Blog
 email: galevski.marko@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
- My name's Marko and I like to apply engineering theory to amateur home projects.
+ My name's Marko and I like engineering and poorly written comedy blogs.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://markogalevski.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
